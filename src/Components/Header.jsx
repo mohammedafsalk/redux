@@ -1,8 +1,12 @@
-function Header({ count }) {
+import { useSelector } from "react-redux";
+
+function Header() {
+  const value = useSelector((state) => state.color.value);
+  const item = useSelector((state) => state.count.value);
   return (
     <div className="header">
-      <h1>Redux project</h1>
-      <h3>{count}</h3>
+      <h1 style={{ color: value }}>Redux project</h1>
+      <h3>{item}</h3>
     </div>
   );
 }
