@@ -1,16 +1,8 @@
-import randomColor from "randomcolor";
-
-function Aside({ color, setColor }) {
-  const currentColor = randomColor();
-
-  const Changer = () => {
-    setColor(currentColor);
-  };
-
+function Aside() {
   return (
     <div className="aside">
-      <h2 style={{ color }}>Aside</h2>
-      <button onClick={Changer}>Change Color</button>
+      <h2>Aside</h2>
+      <button>Change Color</button>
     </div>
   );
 }
