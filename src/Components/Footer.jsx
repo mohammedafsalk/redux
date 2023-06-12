@@ -1,7 +1,7 @@
-function Footer() {
+function Footer({ color }) {
   return (
     <div className="footer">
-      <p>Footer </p>
+      <h1 style={{ color }}>Footer</h1>
     </div>
   );
 }

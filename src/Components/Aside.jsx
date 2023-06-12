@@ -1,8 +1,6 @@
 import randomColor from "randomcolor";
-import { useState } from "react";
 
-function Aside() {
-  const [color, setColor] = useState(0);
+function Aside({ color, setColor }) {
   const currentColor = randomColor();
 
   const Changer = () => {
